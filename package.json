@@ -1,0 +1,24 @@
+{
+  "name": "anime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:local": "nodemon --inspect=0.0.0.0:9230 --watch src --nolazy app.js",
+    "migration:run": "npx sequelize-cli db:migrate",
+    "migration:generate": "npx sequelize-cli migration:generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.13.1"
+  }
+}
