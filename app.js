@@ -2,8 +2,10 @@ const express = require('express');
 const { appFactory } = require('./src');
 const envSettings = require('./settings');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
+app.use (cors());
 const routerFactory = express.Router;
 app.use(bodyParser.json({
     limit: '50mb'
