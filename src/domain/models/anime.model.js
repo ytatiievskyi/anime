@@ -22,8 +22,20 @@ class Anime extends Model {
                     type: DataTypes.STRING,
                     allowNull: true,
                 },
+                title: {
+                    type: DataTypes.STRING,
+                    allowNull: true,
+                },
                 rating: {
                     type: DataTypes.FLOAT,
+                    allowNull: true,
+                },
+                addedBy: {
+                    type: DataTypes.STRING,
+                    allowNull: true,
+                },
+                status: {
+                    type: DataTypes.STRING,
                     allowNull: true,
                 }
             },

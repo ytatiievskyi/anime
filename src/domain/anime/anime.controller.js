@@ -25,7 +25,7 @@ class AnimeController extends Controller {
         router.post('/', this.getAction(service.create));
         router.put('/:id', this.getAction(service.update));
         router.get('/:id', this.getAction(service.getOne));
-
+        router.delete('/:id', this.getAction(service.delete));
         return router;
     }
 }

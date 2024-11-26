@@ -8,4 +8,5 @@ module.exports = {
     password: process.env.DB_PASSWORD || 'anime',
     dialect: 'postgres',
     logging: true,
+    synchronize: true,
 }
